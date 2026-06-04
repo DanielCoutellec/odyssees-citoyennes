@@ -15,13 +15,16 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <header className="site-header">
-          <div className="container">
-            <div className="logo">
-              <h1>Odyssées Citoyennes</h1>
-              <p>Association loi 1901</p>
-            </div>
+          <div className="container header-inner">
+            <a href="/" className="logo" aria-label="Accueil Odyssées Citoyennes">
+              <img
+                src="/logo-odyssees.png"
+                alt="Odyssées Citoyennes"
+                className="logo-image"
+              />
+            </a>
 
-            <nav>
+            <nav className="main-nav">
               <a href="/">Accueil</a>
               <a href="/association">Association</a>
               <a href="/maltraitance">Maltraitance</a>
@@ -37,15 +40,11 @@ export default function RootLayout({
         <footer className="site-footer">
           <div className="container">
             <h3>Odyssées Citoyennes</h3>
-
             <p>
               Association engagée pour les droits, la citoyenneté et
               l'amélioration de la qualité des accompagnements.
             </p>
-
-            <p>
-              21 chemin de la Bigüe • 60300 Senlis
-            </p>
+            <p>21 chemin de la Bigüe • 60300 Senlis</p>
           </div>
         </footer>
       </body>

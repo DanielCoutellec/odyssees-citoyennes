@@ -19,7 +19,7 @@ a {
 }
 
 .container {
-  width: min(1120px, calc(100% - 40px));
+  width: min(1400px, calc(100% - 60px));
   margin: 0 auto;
 }
 
@@ -64,12 +64,12 @@ a {
 .hero {
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.18), transparent 24%),
-    linear-gradient(135deg, #ffb300, #ff4b1f 45%, #e53935);
+    linear-gradient(135deg, #ffb300, #ff4b1f 40%, #e53935 80%);
   color: white;
 }
 
 .hero-inner {
-  padding: 86px 0 94px;
+  padding: 96px 0 104px;
 }
 
 .eyebrow {
@@ -81,14 +81,14 @@ a {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(3rem, 6vw, 5.4rem);
   line-height: 1;
 }
 
 .hero-text {
-  max-width: 680px;
+  max-width: 760px;
   margin: 24px 0 0;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1.6;
 }
 
@@ -133,7 +133,7 @@ a {
 }
 
 .intro p {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
   font-size: 1.15rem;
   line-height: 1.8;
@@ -154,10 +154,10 @@ a {
 
 .card {
   display: block;
-  min-height: 210px;
+  min-height: 220px;
   border: 1px solid #ead7aa;
   border-radius: 18px;
-  padding: 30px;
+  padding: 34px;
   background: #fffaf0;
   text-decoration: none;
   box-shadow: 0 12px 30px rgba(90, 45, 0, 0.08);
@@ -189,7 +189,7 @@ a {
 }
 
 .quote-section blockquote {
-  max-width: 860px;
+  max-width: 920px;
   margin: 0 auto;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -217,10 +217,81 @@ a {
   margin: 8px 0;
 }
 
+/* PAGES */
+
+.page-section {
+  padding: 72px 0;
+}
+
+.page-title {
+  margin: 0 0 24px;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  color: #e53935;
+}
+
+.page-intro {
+  max-width: 900px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.sidebar {
+  background: #efe3c2;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.sidebar a {
+  display: block;
+  color: #b72b16;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.article {
+  background: white;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 12px 30px rgba(90, 45, 0, 0.08);
+}
+
+.article h2 {
+  color: #e53935;
+  margin-top: 0;
+}
+
+.article p {
+  line-height: 1.8;
+}
+
+.article ul {
+  line-height: 1.8;
+}
+
 /* RESPONSIVE */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+  .container {
+    width: min(100% - 32px, 1400px);
+  }
+
   .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .content-grid {
     grid-template-columns: 1fr;
   }
 
@@ -230,5 +301,9 @@ a {
 
   .hero-inner {
     padding: 68px 0;
+  }
+
+  .article {
+    padding: 28px;
   }
 }
