@@ -25,7 +25,6 @@ export default function RootLayout({
             </a>
 
             <nav className="main-nav">
-              <a href="/">Accueil</a>
               <a href="/association">Association</a>
               <a href="/maltraitance">Maltraitance</a>
               <a href="/evaluation-qualite">Évaluation Qualité</a>
