@@ -9,63 +9,89 @@ export default function CourCassationPage() {
         <div className="article">
           <p>
             Par son arrêt du 26 septembre 2007, la Chambre sociale de la
-            Cour de Cassation a confirmé l'arrêt rendu par la Cour d'Appel
-            de Paris le 18 novembre 2005 dans l'affaire opposant
+            Cour de Cassation confirme définitivement l'arrêt rendu par la
+            Cour d'Appel de Paris le 18 novembre 2005 dans l'affaire opposant
             Jean Font à l'Association Entraide Universitaire.
           </p>
 
-          <h2>Une décision fondatrice</h2>
+          <div style={{ margin: "30px 0" }}>
+            <a
+              href="/documents/cour-cassation-2007.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-light"
+            >
+              📄 Ouvrir la décision complète (PDF)
+            </a>
+
+            <a
+              href="#texte-integral"
+              className="btn btn-outline"
+              style={{ marginLeft: "12px" }}
+            >
+              Lire les extraits
+            </a>
+          </div>
+
+          <h2>Résumé</h2>
 
           <p>
-            La Cour de Cassation confirme que l'article L.313-24 du
-            Code de l'Action Sociale et des Familles protège les salariés
-            qui signalent ou témoignent de mauvais traitements ou de
-            privations infligés à une personne accueillie dans un
-            établissement social ou médico-social.
+            La Cour confirme que l'article L.313-24 du Code de l'Action
+            Sociale et des Familles protège les salariés qui signalent ou
+            témoignent de mauvais traitements infligés à des personnes
+            accueillies dans les établissements sociaux et médico-sociaux.
           </p>
 
-          <h2>Nullité du licenciement</h2>
-
           <p>
-            La Cour juge que lorsque l'employeur fait référence au
-            signalement de maltraitance dans la lettre de licenciement,
-            cette seule circonstance suffit à entraîner la nullité du
-            licenciement.
+            Dès lors que la lettre de licenciement fait référence à un
+            signalement de maltraitance, le licenciement est nul.
           </p>
 
           <blockquote>
-            « Le pouvoir reconnu au juge de prononcer la réintégration
-            du salarié implique nécessairement que le licenciement est nul. »
+            « Le pouvoir reconnu au juge de prononcer la réintégration du
+            salarié implique nécessairement que le licenciement est nul. »
           </blockquote>
 
-          <h2>Réintégration du salarié</h2>
+          <h2>Principes retenus par la Cour</h2>
 
-          <p>
-            La Cour confirme également que le salarié a droit à sa
-            réintégration lorsqu'elle a été ordonnée et que l'employeur
-            ne peut se soustraire à cette obligation.
-          </p>
+          <ul>
+            <li>Protection du salarié ayant signalé des faits de maltraitance.</li>
+            <li>Nullité du licenciement fondé même partiellement sur ce signalement.</li>
+            <li>Possibilité de réintégration du salarié.</li>
+            <li>Droit à indemnisation en cas de non-réintégration.</li>
+            <li>Protection renforcée des personnes accueillies.</li>
+          </ul>
 
-          <p>
-            Lorsque la réintégration n'est pas exécutée, le salarié peut
-            obtenir une indemnisation correspondant aux rémunérations
-            qu'il aurait dû percevoir jusqu'à sa renonciation éventuelle
-            à cette réintégration.
-          </p>
+          <section id="texte-integral" style={{ marginTop: "50px" }}>
+            <h2>Extraits significatifs</h2>
 
-          <h2>Portée de l'arrêt</h2>
+            <p>
+              La Cour de Cassation rappelle que selon l'article L.313-24 du
+              Code de l'Action Sociale et des Familles, l'employeur ne peut
+              prendre en considération le fait qu'un salarié témoigne de
+              mauvais traitements ou de privations infligés à une personne
+              accueillie.
+            </p>
 
-          <p>
-            Cet arrêt constitue une référence majeure pour la protection
-            des lanceurs d'alerte dans les établissements sociaux et
-            médico-sociaux.
-          </p>
+            <p>
+              La Haute Juridiction considère que le pouvoir reconnu au juge de
+              prononcer la réintégration du salarié implique nécessairement que
+              le licenciement est nul.
+            </p>
 
-          <p>
-            Il confirme définitivement la jurisprudence initiée par la
-            Cour d'Appel de Paris et renforce la protection des personnes
-            signalant des faits de maltraitance.
-          </p>
+            <p>
+              Ayant constaté que la lettre de licenciement reprochait au salarié
+              d'avoir dénoncé des actes de maltraitance, la Cour d'Appel avait
+              exactement déduit que le licenciement était nul sans avoir à
+              examiner les autres griefs invoqués.
+            </p>
+
+            <p>
+              En conséquence, la Cour de Cassation rejette le pourvoi formé par
+              l'Association Entraide Universitaire et confirme intégralement la
+              solution retenue par la Cour d'Appel.
+            </p>
+          </section>
         </div>
       </div>
     </main>
