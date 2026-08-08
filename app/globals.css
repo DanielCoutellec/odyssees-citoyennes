@@ -337,4 +337,138 @@ a {
 .contact-form textarea:focus {
   outline: 2px solid #f28c18;
   outline-offset: 2px;
+}.home-section-title {
+  margin: 0 0 36px;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #e53935;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 22px;
+  color: #d94420;
+  font-weight: 700;
+}
+
+.home-highlight {
+  padding: 80px 0;
+  background: #efe3c2;
+}
+
+.home-highlight-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.home-highlight h2 {
+  margin: 10px 0 20px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.home-highlight p {
+  line-height: 1.8;
+}
+
+.home-highlight-card {
+  background: white;
+  border-radius: 18px;
+  padding: 34px;
+  box-shadow: 0 12px 30px rgba(90, 45, 0, 0.1);
+}
+
+.home-highlight-card h3 {
+  margin-top: 0;
+  color: #e53935;
+  font-size: 1.5rem;
+}
+
+.home-highlight-card ul {
+  line-height: 2;
+}
+
+.text-link {
+  color: #d94420;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.eyebrow-dark {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #d94420;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-quality {
+  padding: 80px 0;
+  background: white;
+}
+
+.home-center-text {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.home-links a {
+  padding: 12px 18px;
+  border: 1px solid #e4c987;
+  border-radius: 999px;
+  background: #fffaf0;
+  color: #b72b16;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-links a:hover {
+  background: #efe3c2;
+}
+
+.home-contact {
+  padding: 55px 0;
+  background: linear-gradient(135deg, #ff9f0a, #ff4b1f, #e53935);
+  color: white;
+}
+
+.home-contact-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+.home-contact h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.home-contact p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .home-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-contact-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
