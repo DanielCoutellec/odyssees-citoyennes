@@ -1,6 +1,7 @@
 export default function HomePage() {
   return (
     <main>
+      {/* HERO */}
       <section className="hero">
         <div className="container hero-inner">
           <p className="eyebrow">Association loi 1901</p>
@@ -25,6 +26,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* INTRODUCTION */}
       <section className="intro">
         <div className="container">
           <h2>Depuis 1998</h2>
@@ -38,6 +40,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 3 GRANDES RUBRIQUES */}
       <section className="cards-section">
         <div className="container">
           <h2 className="home-section-title">Nos principaux travaux</h2>
@@ -52,7 +55,9 @@ export default function HomePage() {
                 des professionnels lanceurs d'alerte.
               </p>
 
-              <span className="card-link">Découvrir la rubrique →</span>
+              <span className="card-link">
+                Découvrir la rubrique →
+              </span>
             </a>
 
             <a href="/evaluation-qualite" className="card">
@@ -64,7 +69,9 @@ export default function HomePage() {
                 externe.
               </p>
 
-              <span className="card-link">Découvrir la rubrique →</span>
+              <span className="card-link">
+                Découvrir la rubrique →
+              </span>
             </a>
 
             <a href="/handicap-citoyennete" className="card">
@@ -76,12 +83,15 @@ export default function HomePage() {
                 personne dans la société.
               </p>
 
-              <span className="card-link">Découvrir la rubrique →</span>
+              <span className="card-link">
+                Découvrir la rubrique →
+              </span>
             </a>
           </div>
         </div>
       </section>
 
+      {/* JURISPRUDENCE & DOCUMENTS */}
       <section className="home-highlight">
         <div className="container">
           <div className="home-highlight-grid">
@@ -118,28 +128,76 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* DOCUMENTS DE REFERENCE */}
             <div className="home-highlight-card">
               <h3>Documents de référence</h3>
 
-              <ul>
-                <li>Analyse juridique de l'arrêt</li>
-                <li>Arrêt de la Cour d'Appel de Paris</li>
-                <li>Arrêt de la Cour de Cassation</li>
-                <li>Note de la DGAS</li>
-                <li>Cour des Comptes</li>
+              <ul className="documents-home-list">
+                <li>
+                  <a
+                    href="/documents/analyse-arrêt-cour-appel.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Analyse juridique de l'arrêt
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/documents/cour-appel-2005.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Arrêt de la Cour d'Appel de Paris
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/documents/cour-cassation-2007.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Arrêt de la Cour de Cassation
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/documents/dgas-2007.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Note de la DGAS
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/documents/cour-des-comptes-2008.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cour des Comptes
+                  </a>
+                </li>
               </ul>
 
-              <a href="/maltraitance" className="text-link">
-                Accéder aux documents →
+              <a href="/documents" className="text-link">
+                Voir tous les documents →
               </a>
             </div>
           </div>
         </div>
       </section>
 
+      {/* EVALUATION QUALITE */}
       <section className="home-quality">
         <div className="container">
-          <p className="eyebrow-dark">Qualité & droits des usagers</p>
+          <p className="eyebrow-dark">
+            Qualité & droits des usagers
+          </p>
 
           <h2 className="home-section-title">
             Une réflexion nationale sur l'évaluation
@@ -173,9 +231,21 @@ export default function HomePage() {
               Évaluation externe
             </a>
           </div>
+
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "30px",
+            }}
+          >
+            <a href="/documents" className="text-link">
+              Consulter les archives et documents →
+            </a>
+          </div>
         </div>
       </section>
 
+      {/* CITATION */}
       <section className="quote-section">
         <div className="container">
           <blockquote>
@@ -188,6 +258,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CONTACT */}
       <section className="home-contact">
         <div className="container home-contact-inner">
           <div>

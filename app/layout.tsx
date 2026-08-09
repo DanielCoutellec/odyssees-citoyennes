@@ -25,12 +25,13 @@ export default function RootLayout({
             </a>
 
             <nav className="main-nav">
-              <a href="/association">Association</a>
-              <a href="/maltraitance">Maltraitance</a>
-              <a href="/evaluation-qualite">Évaluation Qualité</a>
-              <a href="/handicap-citoyennete">Handicap & Citoyenneté</a>
-              <a href="/contact">Contact</a>
-            </nav>
+  <a href="/association">Association</a>
+  <a href="/maltraitance">Maltraitance</a>
+  <a href="/evaluation-qualite">Évaluation Qualité</a>
+  <a href="/handicap-citoyennete">Handicap & Citoyenneté</a>
+  <a href="/documents">Documents</a>
+  <a href="/contact">Contact</a>
+</nav>
           </div>
         </header>
 
