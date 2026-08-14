@@ -1,62 +1,142 @@
-export default function UsagersPage() {
+export default function RapportPage() {
   return (
     <main className="page-section">
       <div className="container">
-        <h1 className="page-title">Usagers</h1>
 
-        <div className="article">
-          <h2>Que dire des usagers ?</h2>
+        <h1 className="page-title">
+          Rapport
+        </h1>
 
-          <p>
-            Texte de Michel Chauvière, directeur de recherche au CNRS,
-            CERSA – Université Paris II.
-          </p>
+        <div className="content-grid">
 
-          <p>
-            Le texte interroge la place de l'usager dans les services sociaux
-            et médico-sociaux, en distinguant notamment l'usager du client
-            et du consommateur.
-          </p>
+          <aside className="sidebar">
+            <a href="/evaluation-qualite/rapport">
+              Rapport
+            </a>
 
-          <h2>Une catégorie qui n'est pas naturelle</h2>
+            <a href="/evaluation-qualite/loi-2002-2">
+              Évaluation et Loi 2002-2
+            </a>
 
-          <p>
-            L'usager n'existe pas indépendamment d'une situation d'usage.
-            Il se définit dans une relation concrète avec un service,
-            une institution ou un professionnel.
-          </p>
+            <a href="/evaluation-qualite/usagers">
+              Usagers
+            </a>
 
-          <h2>Usager, client ou consommateur ?</h2>
+            <a href="/evaluation-qualite/objectivite-subjectivite">
+              Objectivité / Subjectivité
+            </a>
 
-          <p>
-            Le texte souligne que la logique de l'usager ne se réduit pas
-            à une logique marchande. Elle engage aussi des valeurs d'usage,
-            de participation, de citoyenneté et de reconnaissance des droits.
-          </p>
+            <a href="/evaluation-qualite/ctnerhi">
+              CTNERHI
+            </a>
 
-          <h2>La participation citoyenne</h2>
+            <a href="/evaluation-qualite/evaluation-externe">
+              Évaluation externe
+            </a>
+          </aside>
 
-          <p>
-            L'usager peut agir collectivement, participer aux politiques
-            publiques et influencer les institutions. Cette dimension le
-            rapproche davantage du citoyen que du simple consommateur.
-          </p>
+          <article className="article">
 
-          <h2>Les associations d'usagers</h2>
+            <h2>
+              Rapport du séminaire d’étude et de recherche
+            </h2>
 
-          <p>
-            Le texte rappelle le rôle historique des associations de parents
-            et d'usagers dans la création de structures d'accueil et dans
-            l'évolution des politiques publiques du handicap.
-          </p>
+            <p>
+              À la demande de la Direction Générale de l’Action Sociale,
+              le CTNERHI a organisé un séminaire consacré aux démarches
+              et outils d’évaluation de la qualité dans le secteur social
+              et médico-social.
+            </p>
 
-          <h2>Une tension entre démocratie et marché</h2>
+            <p>
+              Jean Font, président d’Odyssées Citoyennes, en a assuré
+              la présidence et le rapport.
+            </p>
 
-          <p>
-            La question des usagers reste marquée par une tension entre
-            régulation démocratique, droits des personnes et montée des
-            logiques marchandes dans les services publics et sociaux.
-          </p>
+            <div className="info-box">
+              <h3>Travaux associés</h3>
+
+              <ul>
+                <li>Convention d’étude</li>
+                <li>Annexe technique</li>
+                <li>Rapport final</li>
+                <li>Recommandations</li>
+              </ul>
+            </div>
+
+            <h2>
+              Une réflexion sur l’évaluation de la qualité
+            </h2>
+
+            <p>
+              Le séminaire a réuni chercheurs, universitaires,
+              professionnels, représentants d’associations d’usagers,
+              administration centrale et organismes publics.
+            </p>
+
+            <p>
+              Les travaux ont notamment porté sur les démarches et outils
+              permettant d’évaluer la qualité des activités et prestations
+              dans les établissements et services sociaux et médico-sociaux.
+            </p>
+
+            <h2>
+              Documents disponibles
+            </h2>
+
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "12px",
+                marginTop: "24px",
+              }}
+            >
+              <a
+                href="/documents/convention-etude-2001.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-light"
+              >
+                Convention d’étude
+              </a>
+
+              <a
+                href="/documents/annexe-technique.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-light"
+              >
+                Annexe technique
+              </a>
+
+              <a
+                href="/documents/recommandations.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-light"
+              >
+                Recommandations
+              </a>
+            </div>
+
+            <p style={{ marginTop: "24px" }}>
+              Le rapport complet CTNERHI de décembre 2002 est référencé
+              dans les archives historiques, mais son PDF original n’a pas
+              encore été récupéré.
+            </p>
+
+            <div style={{ marginTop: "45px" }}>
+              <a
+                href="/evaluation-qualite"
+                className="text-link"
+              >
+                ← Retour à Évaluation Qualité
+              </a>
+            </div>
+
+          </article>
+
         </div>
       </div>
     </main>

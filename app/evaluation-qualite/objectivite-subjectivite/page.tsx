@@ -2,94 +2,237 @@ export default function ObjectiviteSubjectivitePage() {
   return (
     <main className="page-section">
       <div className="container">
+
         <h1 className="page-title">
           Objectivité / Subjectivité
         </h1>
 
-        <div className="article">
-          <h2>La place de la subjectivité dans l’évaluation</h2>
+        <div className="content-grid">
 
-          <p>
-            Texte de Marc Maudinet, directeur du CTNERHI.
-          </p>
+          {/* MENU LATÉRAL */}
+          <aside className="sidebar">
+            <a href="/evaluation-qualite/rapport">
+              Rapport
+            </a>
 
-          <p>
-            Cette contribution interroge une idée centrale de l’évaluation
-            dans le secteur social et médico-social : peut-on réellement
-            parvenir à une évaluation totalement objective ?
-          </p>
+            <a href="/evaluation-qualite/loi-2002-2">
+              Évaluation et Loi 2002-2
+            </a>
 
-          <h2>L’objectivité totale : une utopie</h2>
+            <a href="/evaluation-qualite/usagers">
+              Usagers
+            </a>
 
-          <p>
-            L’auteur soutient que la recherche d’une objectivité absolue
-            dans l’évaluation est illusoire. Toute évaluation implique
-            nécessairement des choix, des critères, des indicateurs et une
-            interprétation.
-          </p>
+            <a href="/evaluation-qualite/objectivite-subjectivite">
+              Objectivité / Subjectivité
+            </a>
 
-          <p>
-            La subjectivité n’est donc pas un défaut accidentel de
-            l’évaluation : elle fait partie du processus même d’évaluer.
-          </p>
+            <a href="/evaluation-qualite/ctnerhi">
+              CTNERHI
+            </a>
 
-          <blockquote>
-            « Il n’y a évaluation que parce qu’il y a de la subjectivité.
-            En l’absence de cette subjectivité il est plus juste de parler
-            de contrôle que d’évaluation. »
-          </blockquote>
+            <a href="/evaluation-qualite/evaluation-externe">
+              Évaluation externe
+            </a>
+          </aside>
 
-          <h2>Évaluation et contrôle</h2>
 
-          <p>
-            Le texte distingue nettement l’évaluation du contrôle.
-          </p>
+          {/* CONTENU */}
+          <article className="article">
 
-          <ul>
-            <li>
-              Le contrôle vérifie une conformité à des normes ou à un
-              référentiel prédéfini.
-            </li>
-            <li>
-              L’évaluation produit une estimation, un jugement et donne du
-              sens aux résultats observés.
-            </li>
-          </ul>
+            <h2>
+              La place de la subjectivité dans l’évaluation
+            </h2>
 
-          <h2>Éviter l’arbitraire</h2>
+            <p>
+              <strong>Marc Maudinet</strong><br />
+              Directeur du CTNERHI
+            </p>
 
-          <p>
-            Selon l’auteur, le véritable enjeu n’est pas de supprimer la
-            subjectivité de l’évaluateur, mais d’éviter l’arbitraire.
-          </p>
+            <p>
+              Dans cette contribution, Marc Maudinet interroge la recherche
+              d’objectivité dans les démarches d’évaluation du secteur social
+              et médico-social.
+            </p>
 
-          <p>
-            Les choix effectués au cours d’une évaluation doivent donc être
-            explicites, argumentés et transparents.
-          </p>
+            <p>
+              La loi de janvier 2002 renforce les exigences en matière
+              d’évaluation. Mais rechercher une objectivité absolue ne doit
+              pas conduire à nier la part de jugement nécessairement présente
+              dans tout processus d’évaluation.
+            </p>
 
-          <h2>Les étapes où intervient la subjectivité</h2>
 
-          <ul>
-            <li>Le choix de l’objectif de l’évaluation.</li>
-            <li>Le choix des critères.</li>
-            <li>Le choix des indicateurs.</li>
-            <li>Le choix des méthodes de recueil d’information.</li>
-            <li>L’interprétation des résultats.</li>
-          </ul>
+            <div className="info-box">
+              <h3>Une idée centrale</h3>
 
-          <h2>Une formule centrale</h2>
+              <p>
+                La subjectivité n’est pas ce qu’il faut supprimer de
+                l’évaluation. Ce qu’il faut éviter, c’est
+                <strong> l’arbitraire</strong>.
+              </p>
 
-          <blockquote>
-            « Subjectivité mais pas arbitraire. »
-          </blockquote>
+              <p>
+                L’évaluation doit donc reposer sur une démarche rigoureuse,
+                explicite et transparente.
+              </p>
+            </div>
 
-          <p>
-            Le texte conclut que l’objectivité absolue dans le secteur social
-            et médico-social n’est pas atteignable, mais qu’une démarche
-            rigoureuse, transparente et argumentée permet de produire une
-            évaluation pertinente.
-          </p>
+
+            <h2>Évaluer n’est pas contrôler</h2>
+
+            <p>
+              Évaluer consiste à produire une estimation et un jugement.
+              L’interprétation d’une réalité dépend nécessairement de valeurs,
+              de représentations et du contexte dans lequel l’évaluation
+              intervient.
+            </p>
+
+            <p>
+              C’est précisément cette dimension qui distingue l’évaluation
+              du contrôle : le contrôle vérifie la conformité à une norme,
+              tandis que l’évaluation conduit à porter un jugement et à
+              donner du sens aux informations recueillies.
+            </p>
+
+
+            <h2>Les cinq étapes de l’évaluation</h2>
+
+            <p>
+              Marc Maudinet montre que la subjectivité intervient à chaque
+              étape du processus d’évaluation.
+            </p>
+
+            <div className="info-box">
+              <h3>1. Définir l’objectif</h3>
+
+              <p>
+                Il faut déterminer la nature de l’évaluation et les types
+                de décisions susceptibles d’être prises à son terme.
+              </p>
+            </div>
+
+            <div className="info-box">
+              <h3>2. Choisir les critères</h3>
+
+              <p>
+                Les critères doivent être pertinents, indépendants,
+                peu nombreux et pondérés. Leur sélection influence
+                directement le résultat de l’évaluation.
+              </p>
+            </div>
+
+            <div className="info-box">
+              <h3>3. Choisir les indicateurs</h3>
+
+              <p>
+                Les indicateurs permettent d’apprécier les critères retenus.
+                Ils peuvent être qualitatifs ou quantitatifs et doivent
+                apporter une information réellement pertinente.
+              </p>
+            </div>
+
+            <div className="info-box">
+              <h3>4. Recueillir l’information</h3>
+
+              <p>
+                Interviews, questionnaires, analyse documentaire ou grilles :
+                les méthodes retenues doivent permettre d’obtenir une
+                information valide et fiable.
+              </p>
+            </div>
+
+            <div className="info-box">
+              <h3>5. Interpréter les résultats</h3>
+
+              <p>
+                L’évaluateur doit mettre en relation critères, indicateurs
+                et informations recueillies afin de donner du sens aux
+                résultats et de préparer la décision.
+              </p>
+            </div>
+
+
+            <h2>Subjectivité, mais pas arbitraire</h2>
+
+            <p>
+              La conclusion de Marc Maudinet est particulièrement claire :
+              vouloir supprimer toute subjectivité de l’évaluation est
+              illusoire.
+            </p>
+
+            <p>
+              En revanche, les choix réalisés tout au long du processus
+              doivent pouvoir être expliqués, argumentés et rendus
+              transparents.
+            </p>
+
+            <p>
+              La rigueur de l’évaluation repose donc moins sur une prétendue
+              neutralité absolue que sur la capacité de l’évaluateur à
+              justifier ses choix.
+            </p>
+
+
+            {/* DOCUMENT PDF */}
+            <div
+              style={{
+                marginTop: "40px",
+                padding: "28px",
+                background: "#fff7e2",
+                border: "1px solid #ead7aa",
+                borderRadius: "14px",
+              }}
+            >
+              <h2 style={{ marginTop: 0 }}>
+                Document d’archive
+              </h2>
+
+              <p>
+                Retrouvez le texte complet de Marc Maudinet,
+                « La place de la subjectivité dans l’évaluation »,
+                conservé dans la base documentaire d’Odyssées Citoyennes.
+              </p>
+
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "12px",
+                  marginTop: "22px",
+                }}
+              >
+                <a
+                  href="/documents/objectivite-subjectivite-marc-maudinet.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-light"
+                >
+                  Consulter le PDF
+                </a>
+
+                <a
+                  href="/documents/objectivite-subjectivite-marc-maudinet.pdf"
+                  download
+                  className="btn btn-light"
+                >
+                  Télécharger le PDF
+                </a>
+              </div>
+            </div>
+
+
+            {/* RETOUR */}
+            <div style={{ marginTop: "45px" }}>
+              <a
+                href="/evaluation-qualite"
+                className="text-link"
+              >
+                ← Retour à Évaluation Qualité
+              </a>
+            </div>
+
+          </article>
         </div>
       </div>
     </main>

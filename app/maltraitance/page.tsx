@@ -13,6 +13,7 @@ export default function MaltraitancePage() {
         <div className="content-grid" style={{ marginTop: "40px" }}>
           <aside className="sidebar">
             <a href="/maltraitance/analyse-arret">Analyse juridique</a>
+			<a href="/maltraitance/senat">Sénat</a>
             <a href="/maltraitance/cour-appel">Cour d'Appel 2005</a>
             <a href="/maltraitance/cour-cassation">Cour de Cassation 2007</a>
             <a href="/maltraitance/dgas">Note DGAS 2007</a>
