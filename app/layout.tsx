@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SiteSearch from "../components/SiteSearch";
 
 export const metadata: Metadata = {
   title: {
     default: "Odyssées Citoyennes",
     template: "%s | Odyssées Citoyennes",
   },
+
   description:
     "Odyssées Citoyennes : handicap, citoyenneté, lutte contre la maltraitance et évaluation de la qualité dans le secteur social et médico-social.",
 };
@@ -34,6 +36,7 @@ export default function RootLayout({
                 className="logo-image"
               />
             </a>
+
 
             {/* NAVIGATION PRINCIPALE */}
             <nav
@@ -69,12 +72,16 @@ export default function RootLayout({
               </a>
             </nav>
 
+
+            {/* MOTEUR DE RECHERCHE */}
+            <SiteSearch />
+
           </div>
         </header>
 
 
         {/* =====================================================
-            CONTENU
+            CONTENU DES PAGES
             ===================================================== */}
 
         {children}
@@ -85,6 +92,7 @@ export default function RootLayout({
             ===================================================== */}
 
         <footer className="site-footer">
+
           <div className="container footer-grid">
 
             {/* COLONNE GAUCHE */}
@@ -104,7 +112,8 @@ export default function RootLayout({
               </p>
 
               <p>
-                L&apos;Hermitage – 21 chemin de la Bigüe<br />
+                L&apos;Hermitage – 21 chemin de la Bigüe
+                <br />
                 60300 Senlis – France
               </p>
 
@@ -120,6 +129,7 @@ export default function RootLayout({
               className="footer-links"
               aria-label="Informations légales"
             >
+
               <a href="/mentions-legales">
                 Mentions légales
               </a>
@@ -135,9 +145,11 @@ export default function RootLayout({
               <a href="/contact">
                 Contact
               </a>
+
             </nav>
 
           </div>
+
         </footer>
 
       </body>
