@@ -6,7 +6,12 @@ export default function EvaluationQualitePage() {
         <h1 className="page-title">
           Évaluation Qualité
         </h1>
-
+<div
+  className="page-photo"
+  style={{
+    backgroundImage: 'url("/images/evaluation-qualite.jpg")',
+  }}
+/>
         <div className="article">
 
           <p>

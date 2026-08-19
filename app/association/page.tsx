@@ -1,76 +1,98 @@
-export default function HomePage() {
+export default function AssociationPage() {
   return (
-    <main>
-      <section className="hero">
-        <div className="container hero-inner">
-          <div>
-            <p className="eyebrow">Association loi 1901</p>
-            <h1>Odyssées Citoyennes</h1>
-            <p className="hero-text">
-              Droits des personnes, citoyenneté, qualité des accompagnements
-              et lutte contre la maltraitance.
-            </p>
+    <main className="page-section">
+      <div className="container">
+        <h1 className="page-title">L'association</h1>
+<div
+  className="page-photo"
+  style={{
+    backgroundImage: 'url("/images/association.jpg")',
+  }}
+/>
+        <p className="page-intro">
+          Odyssées Citoyennes est une association loi 1901 créée en 1998.
+          Elle agit pour la promotion, l'exercice et la défense des droits
+          citoyens des personnes accueillies dans les établissements et
+          services sociaux et médico-sociaux.
+        </p>
 
-            <div className="hero-actions">
-              <a href="/association" className="btn btn-light">
-                Découvrir l'association
-              </a>
-              <a href="/maltraitance" className="btn btn-outline">
-                Voir les travaux
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div className="article">
+          <h2>Notre objet</h2>
 
-      <section className="intro">
-        <div className="container">
-          <h2>Depuis 1998</h2>
           <p>
-            Odyssées Citoyennes agit en faveur de la pleine citoyenneté des
-            personnes accueillies dans les établissements et services sociaux
-            et médico-sociaux.
+            L'association a été créée afin de promouvoir les droits,
+            la citoyenneté et la qualité des accompagnements dans le
+            secteur social et médico-social.
           </p>
-        </div>
-      </section>
 
-      <section className="cards-section">
-        <div className="container cards">
-          <a href="/maltraitance" className="card">
-            <h3>Maltraitance</h3>
-            <p>
-              Jurisprudence fondatrice, protection des lanceurs d'alerte et
-              défense des droits fondamentaux.
-            </p>
-          </a>
+          <ul>
+            <li>
+              Promotion et défense des droits citoyens des personnes
+              accueillies.
+            </li>
 
-          <a href="/evaluation-qualite" className="card">
-            <h3>Évaluation Qualité</h3>
-            <p>
-              Travaux nationaux sur l'évaluation, la loi 2002-2, le CTNERHI
-              et l'évaluation externe.
-            </p>
-          </a>
+            <li>
+              Lutte contre la maltraitance et les violences
+              institutionnelles.
+            </li>
 
-          <a href="/handicap-citoyennete" className="card">
-            <h3>Handicap & Citoyenneté</h3>
-            <p>
-              Participation citoyenne, inclusion, qualité de vie et
-              reconnaissance de la personne.
-            </p>
-          </a>
-        </div>
-      </section>
+            <li>
+              Étude, recherche et mise en œuvre de dispositifs
+              d'évaluation de la qualité.
+            </li>
 
-      <section className="quote-section">
-        <div className="container">
-          <blockquote>
-            « Cette dimension seule est habilitée à signifier le passage de
-            l'individu à la personne, handicapée ou pas, citoyenne en tout cas. »
+            <li>
+              Information et formation des professionnels,
+              usagers et citoyens.
+            </li>
+
+            <li>
+              Développement d'actions favorisant la pleine
+              citoyenneté des personnes accompagnées.
+            </li>
+          </ul>
+
+          <h2>Depuis 1998</h2>
+
+          <p>
+            Odyssées Citoyennes développe une réflexion nationale
+            sur les droits des usagers, l'évaluation de la qualité,
+            la citoyenneté et la participation des personnes.
+          </p>
+
+          <p>
+            Ses travaux ont contribué à faire évoluer les pratiques
+            professionnelles et les politiques publiques dans le
+            secteur social et médico-social.
+          </p>
+
+          <h2>Reconnaissance</h2>
+
+          <p>
+            L'association a obtenu le Label de l'Année Européenne
+            des Personnes Handicapées en reconnaissance de son action
+            en faveur de la citoyenneté, de la qualité des
+            accompagnements et du respect des droits fondamentaux.
+          </p>
+
+          <blockquote
+            style={{
+              marginTop: "40px",
+              padding: "24px",
+              background: "#fff8e8",
+              borderLeft: "5px solid #f28c18",
+              fontStyle: "italic",
+            }}
+          >
+            « Cette dimension seule est habilitée à signifier le
+            passage de l'individu à la personne, handicapée ou pas,
+            citoyenne en tout cas. »
+            <br />
+            <br />
+            <strong>Jean Font</strong>
           </blockquote>
-          <p>Jean Font</p>
         </div>
-      </section>
+      </div>
     </main>
   );
 }

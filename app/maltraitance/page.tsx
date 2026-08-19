@@ -3,7 +3,12 @@ export default function MaltraitancePage() {
     <main className="page-section">
       <div className="container">
         <h1 className="page-title">Maltraitance</h1>
-
+<div
+  className="page-photo"
+  style={{
+    backgroundImage: 'url("/images/maltraitance.jpg")',
+  }}
+/>
         <p className="page-intro">
           Odyssées Citoyennes a contribué à faire reconnaître la protection
           des salariés signalant des actes de maltraitance dans les

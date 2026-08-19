@@ -1,23 +1,31 @@
+import HomeSlider from "../components/HomeSlider";
+
 export default function HomePage() {
   return (
     <main>
+
       {/* HERO */}
-      <section className="home-v3-hero">
+      <section className="home-v3-hero home-v3-hero-with-slider">
+
+        <HomeSlider />
+
         <div className="container home-v3-hero-grid">
           <div className="home-v3-hero-content">
-            <p className="home-v3-kicker">Association loi 1901 • Depuis 1998</p>
+            <p className="home-v3-kicker">
+              Association loi 1901 • Depuis 1998
+            </p>
 
             <h1>Odyssées Citoyennes</h1>
 
             <p className="home-v3-lead">
               Défendre les droits, promouvoir la citoyenneté et contribuer
-              à l'amélioration de la qualité des accompagnements dans le
+              à l&apos;amélioration de la qualité des accompagnements dans le
               secteur social et médico-social.
             </p>
 
             <div className="home-v3-actions">
               <a href="/association" className="btn btn-light">
-                Découvrir l'association
+                Découvrir l&apos;association
               </a>
 
               <a href="/documents" className="btn btn-outline">
@@ -34,7 +42,9 @@ export default function HomePage() {
           </div>
 
           <div className="home-v3-feature">
-            <p className="home-v3-feature-label">Références majeures</p>
+            <p className="home-v3-feature-label">
+              Références majeures
+            </p>
 
             <h2>
               Une action reconnue
@@ -45,7 +55,7 @@ export default function HomePage() {
             <div className="home-v3-feature-list">
               <a href="/maltraitance/cour-appel">
                 <strong>2005</strong>
-                <span>Cour d'Appel de Paris</span>
+                <span>Cour d&apos;Appel de Paris</span>
               </a>
 
               <a href="/maltraitance/cour-cassation">
@@ -66,16 +76,22 @@ export default function HomePage() {
         </div>
       </section>
 
+
       {/* INTRO */}
       <section className="home-v3-intro">
         <div className="container home-v3-intro-grid">
           <div>
-            <p className="home-v3-section-kicker">Notre mission</p>
-            <h2>Faire de la citoyenneté une réalité concrète</h2>
+            <p className="home-v3-section-kicker">
+              Notre mission
+            </p>
+
+            <h2>
+              Faire de la citoyenneté une réalité concrète
+            </h2>
           </div>
 
           <p>
-            Odyssées Citoyennes agit pour la promotion, l'exercice et la
+            Odyssées Citoyennes agit pour la promotion, l&apos;exercice et la
             défense des droits citoyens des personnes accueillies et
             accompagnées dans les établissements et services sociaux et
             médico-sociaux.
@@ -83,78 +99,110 @@ export default function HomePage() {
         </div>
       </section>
 
+
       {/* 3 AXES */}
       <section className="home-v3-axes">
         <div className="container">
           <div className="home-v3-section-heading">
-            <p className="home-v3-section-kicker">Nos travaux</p>
-            <h2>Trois grands axes d'action</h2>
+            <p className="home-v3-section-kicker">
+              Nos travaux
+            </p>
+
+            <h2>
+              Trois grands axes d&apos;action
+            </h2>
           </div>
 
           <div className="home-v3-cards">
+
             <a href="/maltraitance" className="home-v3-card">
               <span className="home-v3-card-number">01</span>
+
               <h3>Maltraitance</h3>
+
               <p>
                 Protection des personnes accueillies, signalement des faits
                 de maltraitance et jurisprudence relative à la protection
                 des professionnels.
               </p>
+
               <span className="home-v3-card-link">
                 Découvrir la rubrique →
               </span>
             </a>
 
-            <a href="/evaluation-qualite" className="home-v3-card">
+
+            <a
+              href="/evaluation-qualite"
+              className="home-v3-card"
+            >
               <span className="home-v3-card-number">02</span>
+
               <h3>Évaluation Qualité</h3>
+
               <p>
                 Loi 2002-2, droits des usagers, CTNERHI, réflexion sur
-                l'évaluation et habilitation à l'évaluation externe.
+                l&apos;évaluation et habilitation à l&apos;évaluation externe.
               </p>
+
               <span className="home-v3-card-link">
                 Découvrir la rubrique →
               </span>
             </a>
 
-            <a href="/handicap-citoyennete" className="home-v3-card">
+
+            <a
+              href="/handicap-citoyennete"
+              className="home-v3-card"
+            >
               <span className="home-v3-card-number">03</span>
+
               <h3>Handicap & Citoyenneté</h3>
+
               <p>
                 Participation, accessibilité, citoyenneté, colloque,
                 intervenants, innovation et réflexion sur la place
                 de la personne dans la société.
               </p>
+
               <span className="home-v3-card-link">
                 Découvrir la rubrique →
               </span>
             </a>
+
           </div>
         </div>
       </section>
 
+
       {/* JURISPRUDENCE */}
       <section className="home-v3-reference">
         <div className="container home-v3-reference-grid">
+
           <div>
-            <p className="home-v3-section-kicker">Jurisprudence</p>
+            <p className="home-v3-section-kicker">
+              Jurisprudence
+            </p>
 
             <h2>
-              Cour d'Appel de Paris 2005
+              Cour d&apos;Appel de Paris 2005
               <br />
               Cour de Cassation 2007
             </h2>
 
             <p>
-              Les décisions rendues dans l'affaire Jean Font ont contribué
-              à renforcer la protection des salariés signalant des actes de
-              maltraitance dans les établissements sociaux et
-              médico-sociaux.
+              Les décisions rendues dans l&apos;affaire Jean Font ont
+              contribué à renforcer la protection des salariés signalant
+              des actes de maltraitance dans les établissements sociaux
+              et médico-sociaux.
             </p>
 
             <div className="home-v3-actions">
-              <a href="/maltraitance/cour-appel" className="btn btn-light">
-                Cour d'Appel
+              <a
+                href="/maltraitance/cour-appel"
+                className="btn btn-light"
+              >
+                Cour d&apos;Appel
               </a>
 
               <a
@@ -166,6 +214,7 @@ export default function HomePage() {
             </div>
           </div>
 
+
           <div className="home-v3-docbox">
             <h3>Documents de référence</h3>
 
@@ -176,7 +225,7 @@ export default function HomePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Analyse juridique de l'arrêt
+                  Analyse juridique de l&apos;arrêt
                 </a>
               </li>
 
@@ -186,7 +235,7 @@ export default function HomePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Arrêt de la Cour d'Appel de Paris
+                  Arrêt de la Cour d&apos;Appel de Paris
                 </a>
               </li>
 
@@ -225,25 +274,30 @@ export default function HomePage() {
               Voir toute la bibliothèque →
             </a>
           </div>
+
         </div>
       </section>
+
 
       {/* QUALITE */}
       <section className="home-v3-quality">
         <div className="container">
+
           <div className="home-v3-section-heading">
             <p className="home-v3-section-kicker">
               Qualité & droits des usagers
             </p>
 
-            <h2>Une réflexion nationale sur l'évaluation</h2>
+            <h2>
+              Une réflexion nationale sur l&apos;évaluation
+            </h2>
           </div>
 
           <p className="home-v3-quality-text">
-            Les travaux d'Odyssées Citoyennes ont porté sur les droits des
-            usagers, la loi 2002-2, la place de la subjectivité dans
-            l'évaluation, les travaux du CTNERHI et l'évaluation externe des
-            établissements sociaux et médico-sociaux.
+            Les travaux d&apos;Odyssées Citoyennes ont porté sur les droits
+            des usagers, la loi 2002-2, la place de la subjectivité dans
+            l&apos;évaluation, les travaux du CTNERHI et l&apos;évaluation
+            externe des établissements sociaux et médico-sociaux.
           </p>
 
           <div className="home-links">
@@ -267,40 +321,53 @@ export default function HomePage() {
               Évaluation externe
             </a>
           </div>
+
         </div>
       </section>
+
 
       {/* CITATION */}
       <section className="home-v3-quote">
         <div className="container">
+
           <blockquote>
             « Cette dimension seule est habilitée à signifier le passage
-            de l'individu à la personne, handicapée ou pas, citoyenne
+            de l&apos;individu à la personne, handicapée ou pas, citoyenne
             en tout cas. »
           </blockquote>
+
           <p>Jean Font</p>
+
         </div>
       </section>
+
 
       {/* CONTACT */}
       <section className="home-v3-contact">
         <div className="container home-v3-contact-inner">
+
           <div>
             <p className="home-v3-section-kicker home-v3-section-kicker-light">
               Contact
             </p>
-            <h2>Une question ou un document à consulter ?</h2>
+
+            <h2>
+              Une question ou un document à consulter ?
+            </h2>
+
             <p>
-              Retrouvez les coordonnées de l'association ou adressez-nous
-              directement votre message.
+              Retrouvez les coordonnées de l&apos;association ou
+              adressez-nous directement votre message.
             </p>
           </div>
 
           <a href="/contact" className="btn btn-light">
             Nous contacter
           </a>
+
         </div>
       </section>
+
     </main>
   );
 }

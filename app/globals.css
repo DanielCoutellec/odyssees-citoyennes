@@ -1141,4 +1141,128 @@ a {
   .footer-copyright {
     margin-top: 20px !important;
   }
+}/* =========================================
+   SLIDER PHOTOS ACCUEIL
+   ========================================= */
+
+.home-v3-hero-with-slider {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.home-photo-slider {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.home-photo-slide {
+  position: absolute;
+  inset: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transform: scale(1.03);
+
+  transition:
+    opacity 1.2s ease-in-out,
+    transform 6s ease-out;
+}
+
+.home-photo-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.home-photo-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(28, 24, 21, 0.82) 0%,
+      rgba(28, 24, 21, 0.67) 48%,
+      rgba(28, 24, 21, 0.55) 100%
+    );
+}
+
+/* Le contenu reste au-dessus des photos */
+
+.home-v3-hero-with-slider .home-v3-hero-grid {
+  position: relative;
+  z-index: 2;
+}
+
+/* Lisibilité des textes */
+
+.home-v3-hero-with-slider .home-v3-hero-content h1,
+.home-v3-hero-with-slider .home-v3-lead,
+.home-v3-hero-with-slider .home-v3-kicker,
+.home-v3-hero-with-slider .home-v3-meta {
+  color: #fff;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .home-photo-slide {
+    background-position: center;
+  }
+
+  .home-photo-overlay {
+    background: rgba(28, 24, 21, 0.72);
+  }
+}
+
+/* Accessibilité :
+   réduction des animations si demandée par l'utilisateur */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-photo-slide {
+    transition: opacity 0.2s linear;
+    transform: none;
+  }
+
+  .home-photo-slide.active {
+    transform: none;
+  }
+}/* =========================================
+   BANDEAUX PHOTOS PAGES
+   ========================================= */
+
+.page-photo {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.page-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(25, 25, 25, 0.42),
+    rgba(25, 25, 25, 0.18)
+  );
+}
+
+@media (max-width: 768px) {
+  .page-photo {
+    height: 210px;
+    margin-bottom: 28px;
+  }
 }

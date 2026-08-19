@@ -2,7 +2,12 @@ export default function HandicapCitoyennetePage() {
   return (
     <main className="page-section">
       <div className="container">
-
+<div
+  className="page-photo"
+  style={{
+    backgroundImage: 'url("/images/handicap-citoyennete.jpg")',
+  }}
+/>
         <h1 className="page-title">
           Handicap & Citoyenneté
         </h1>

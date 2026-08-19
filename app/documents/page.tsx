@@ -5,7 +5,12 @@ export default function DocumentsPage() {
         <h1 className="page-title">
           Archives & Documents
         </h1>
-
+<div
+  className="page-photo"
+  style={{
+    backgroundImage: 'url("/images/document.jpg")',
+  }}
+/>
         <p className="page-intro">
           Cette rubrique rassemble les principaux documents historiques,
           juridiques, institutionnels et travaux de réflexion conservés
