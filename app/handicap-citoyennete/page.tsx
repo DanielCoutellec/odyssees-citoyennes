@@ -2,17 +2,21 @@ export default function HandicapCitoyennetePage() {
   return (
     <main className="page-section">
       <div className="container">
-<div
-  className="page-photo"
-  style={{
-    backgroundImage: 'url("/images/handicap-citoyennete.jpg")',
-  }}
-/>
+
         <h1 className="page-title">
           Handicap & Citoyenneté
         </h1>
 
-        <div className="article">
+        <div
+          className="page-photo"
+          style={{
+            backgroundImage: 'url("/images/photos/accueil-4.jpg")',
+          }}
+          role="img"
+          aria-label="Handicap, participation et citoyenneté"
+        />
+
+        <article className="article">
 
           <p>
             Odyssées Citoyennes a organisé un colloque consacré à la pleine
@@ -32,22 +36,20 @@ export default function HandicapCitoyennetePage() {
           <p>
             Le principe défendu par Odyssées Citoyennes devait également
             se traduire concrètement dans l&apos;organisation de la
-            manifestation. L&apos;accessibilité ne concernait donc pas
-            uniquement les locaux, mais l&apos;ensemble des conditions
-            permettant à chacun de participer effectivement aux débats.
+            manifestation.
           </p>
 
-
-          {/* =====================================================
-              SOUS-RUBRIQUES
-              ===================================================== */}
+          <p>
+            L&apos;accessibilité ne concernait donc pas uniquement les locaux,
+            mais l&apos;ensemble des conditions permettant à chacun de
+            participer effectivement aux débats.
+          </p>
 
           <div
             className="cards handicap-cards"
             style={{ marginTop: "30px" }}
           >
 
-            {/* PROGRAMME */}
             <a
               href="/handicap-citoyennete/programme"
               className="card"
@@ -60,8 +62,6 @@ export default function HandicapCitoyennetePage() {
               </p>
             </a>
 
-
-            {/* SENS */}
             <a
               href="/handicap-citoyennete/sens"
               className="card"
@@ -69,13 +69,11 @@ export default function HandicapCitoyennetePage() {
               <h3>Sens</h3>
 
               <p>
-                Le sens des débats et la démarche participative
-                imaginée par Jean Font pour le colloque.
+                Le sens des débats et la démarche participative imaginée
+                par Jean Font pour le colloque.
               </p>
             </a>
 
-
-            {/* PROBLÉMATIQUE */}
             <a
               href="/handicap-citoyennete/problematique"
               className="card"
@@ -88,8 +86,6 @@ export default function HandicapCitoyennetePage() {
               </p>
             </a>
 
-
-            {/* INTERVENANTS */}
             <a
               href="/handicap-citoyennete/intervenants"
               className="card"
@@ -97,13 +93,11 @@ export default function HandicapCitoyennetePage() {
               <h3>Intervenants</h3>
 
               <p>
-                Les personnalités, chercheurs, professionnels et
-                personnes concernées ayant participé aux débats.
+                Les personnalités, chercheurs, professionnels et personnes
+                concernées ayant participé aux débats.
               </p>
             </a>
 
-
-            {/* ORGANISATION */}
             <a
               href="/handicap-citoyennete/organisation"
               className="card"
@@ -111,16 +105,11 @@ export default function HandicapCitoyennetePage() {
               <h3>Organisation & accessibilité</h3>
 
               <p>
-                Plus de 30 personnes mobilisées et une organisation
-                conçue pour rendre toutes les dimensions du colloque
-                accessibles.
+                Plus de 30 personnes mobilisées et une organisation conçue
+                pour rendre toutes les dimensions du colloque accessibles.
               </p>
             </a>
 
-
-            {/* COLLOQUE PRÉCURSEUR
-                IMPORTANT : la route existante est /innovation
-            */}
             <a
               href="/handicap-citoyennete/innovation"
               className="card"
@@ -134,8 +123,6 @@ export default function HandicapCitoyennetePage() {
               </p>
             </a>
 
-
-            {/* PARTENAIRES */}
             <a
               href="/handicap-citoyennete/partenaires"
               className="card"
@@ -148,8 +135,6 @@ export default function HandicapCitoyennetePage() {
               </p>
             </a>
 
-
-            {/* DOCUMENTS */}
             <a
               href="/documents"
               className="card"
@@ -157,20 +142,15 @@ export default function HandicapCitoyennetePage() {
               <h3>Documents & actes</h3>
 
               <p>
-                Retrouvez les textes, interventions et documents
-                historiques du colloque dans la base documentaire
-                d&apos;Odyssées Citoyennes.
+                Retrouvez les textes, interventions et documents historiques
+                du colloque dans la base documentaire d&apos;Odyssées
+                Citoyennes.
               </p>
             </a>
 
           </div>
 
-        </div>
-
-
-        {/* =====================================================
-            CONCLUSION
-            ===================================================== */}
+        </article>
 
         <div
           style={{

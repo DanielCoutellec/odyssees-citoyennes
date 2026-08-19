@@ -2,96 +2,85 @@ export default function AssociationPage() {
   return (
     <main className="page-section">
       <div className="container">
-        <h1 className="page-title">L'association</h1>
-<div
-  className="page-photo"
-  style={{
-    backgroundImage: 'url("/images/association.jpg")',
-  }}
-/>
-        <p className="page-intro">
-          Odyssées Citoyennes est une association loi 1901 créée en 1998.
-          Elle agit pour la promotion, l'exercice et la défense des droits
-          citoyens des personnes accueillies dans les établissements et
-          services sociaux et médico-sociaux.
-        </p>
 
-        <div className="article">
-          <h2>Notre objet</h2>
+        <h1 className="page-title">L&apos;association</h1>
 
-          <p>
-            L'association a été créée afin de promouvoir les droits,
-            la citoyenneté et la qualité des accompagnements dans le
-            secteur social et médico-social.
-          </p>
+        <div
+          className="page-photo"
+          style={{
+            backgroundImage: 'url("/images/photos/accueil-1.jpg")',
+          }}
+          role="img"
+          aria-label="Échanges et participation citoyenne"
+        />
 
-          <ul>
-            <li>
-              Promotion et défense des droits citoyens des personnes
-              accueillies.
-            </li>
+        <article className="article">
 
-            <li>
-              Lutte contre la maltraitance et les violences
-              institutionnelles.
-            </li>
-
-            <li>
-              Étude, recherche et mise en œuvre de dispositifs
-              d'évaluation de la qualité.
-            </li>
-
-            <li>
-              Information et formation des professionnels,
-              usagers et citoyens.
-            </li>
-
-            <li>
-              Développement d'actions favorisant la pleine
-              citoyenneté des personnes accompagnées.
-            </li>
-          </ul>
-
-          <h2>Depuis 1998</h2>
+          <h2>Odyssées Citoyennes</h2>
 
           <p>
-            Odyssées Citoyennes développe une réflexion nationale
-            sur les droits des usagers, l'évaluation de la qualité,
-            la citoyenneté et la participation des personnes.
+            Odyssées Citoyennes est une association loi 1901 créée en 1998.
           </p>
 
           <p>
-            Ses travaux ont contribué à faire évoluer les pratiques
-            professionnelles et les politiques publiques dans le
-            secteur social et médico-social.
+            Elle agit pour la promotion, l&apos;exercice et la défense des
+            droits citoyens des personnes accueillies ou accompagnées dans
+            les établissements et services sociaux et médico-sociaux.
           </p>
 
-          <h2>Reconnaissance</h2>
+          <h2>Une démarche citoyenne</h2>
 
           <p>
-            L'association a obtenu le Label de l'Année Européenne
-            des Personnes Handicapées en reconnaissance de son action
-            en faveur de la citoyenneté, de la qualité des
-            accompagnements et du respect des droits fondamentaux.
+            L&apos;association place la personne, ses droits, sa parole et sa
+            participation au centre de ses réflexions et de ses actions.
           </p>
 
-          <blockquote
-            style={{
-              marginTop: "40px",
-              padding: "24px",
-              background: "#fff8e8",
-              borderLeft: "5px solid #f28c18",
-              fontStyle: "italic",
-            }}
-          >
-            « Cette dimension seule est habilitée à signifier le
-            passage de l'individu à la personne, handicapée ou pas,
-            citoyenne en tout cas. »
-            <br />
-            <br />
-            <strong>Jean Font</strong>
-          </blockquote>
-        </div>
+          <p>
+            Ses travaux ont notamment porté sur la lutte contre la
+            maltraitance, la protection des professionnels qui signalent des
+            faits de maltraitance, l&apos;évaluation de la qualité et la
+            citoyenneté des personnes en situation de handicap.
+          </p>
+
+          <div className="info-box">
+            <h3>Trois grands axes</h3>
+
+            <ul>
+              <li>
+                La prévention et le signalement de la maltraitance.
+              </li>
+
+              <li>
+                L&apos;évaluation de la qualité et les droits des usagers.
+              </li>
+
+              <li>
+                Le handicap, la participation et la citoyenneté.
+              </li>
+            </ul>
+          </div>
+
+          <h2>Des travaux et des archives</h2>
+
+          <p>
+            Le site rassemble également les principaux documents,
+            interventions, décisions de justice et travaux historiques
+            conservés par Odyssées Citoyennes.
+          </p>
+
+          <p>
+            Cette base documentaire permet de conserver la mémoire des
+            actions conduites par l&apos;association et de rendre accessibles
+            des documents de référence.
+          </p>
+
+          <div style={{ marginTop: "35px" }}>
+            <a href="/documents" className="text-link">
+              Consulter la base documentaire →
+            </a>
+          </div>
+
+        </article>
       </div>
     </main>
   );
