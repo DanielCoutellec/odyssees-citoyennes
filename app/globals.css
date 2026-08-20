@@ -340,68 +340,123 @@ a {
 
 .home-v3-hero-with-slider {
   position: relative;
-
   overflow: hidden;
 
-  isolation: isolate;
+  /* Le slider fournit désormais le fond */
+  background: #333;
 }
+
+/* Conteneur des photos */
 
 .home-photo-slider {
   position: absolute;
-
   inset: 0;
-
-  z-index: -2;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .home-photo-slide {
   position: absolute;
-
   inset: 0;
 
-  background-position: center;
+  width: 100%;
+  height: 100%;
+
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-
-  opacity: 0;
-
-  transform: scale(1.03);
-
-  transition:
-    opacity 1.2s ease-in-out,
-    transform 6s ease-out;
 }
 
-.home-photo-slide.active {
-  opacity: 1;
+.home-photo-slide-current {
+  animation: homePhotoFade 1.2s ease-in-out;
+}
 
-  transform: scale(1);
+@keyframes homePhotoFade {
+  from {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .home-photo-overlay {
   position: absolute;
-
   inset: 0;
+  z-index: 1;
+
+  pointer-events: none;
 
   background: linear-gradient(
     90deg,
-    rgba(28, 24, 21, 0.82) 0%,
-    rgba(28, 24, 21, 0.67) 48%,
-    rgba(28, 24, 21, 0.55) 100%
+    rgba(28, 24, 21, 0.8) 0%,
+    rgba(28, 24, 21, 0.64) 48%,
+    rgba(28, 24, 21, 0.48) 100%
   );
 }
 
 .home-v3-hero-with-slider .home-v3-hero-grid {
   position: relative;
-
   z-index: 2;
 }
 
-.home-v3-hero-with-slider .home-v3-hero-content h1,
-.home-v3-hero-with-slider .home-v3-lead,
-.home-v3-hero-with-slider .home-v3-kicker,
-.home-v3-hero-with-slider .home-v3-meta {
-  color: #fff;
+@media (max-width: 768px) {
+  .home-photo-slide {
+    background-position: center center;
+  }
+
+  .home-photo-overlay {
+    background: rgba(28, 24, 21, 0.62);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-photo-slide-current {
+    animation: none;
+  }
+}
+
+
+/* =====================================================
+   SLIDER - MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .home-photo-slider,
+  .home-photo-slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-photo-slide {
+    background-position: center center;
+  }
+
+  .home-photo-overlay {
+    background: rgba(28, 24, 21, 0.62);
+  }
+}
+
+
+/* =====================================================
+   RÉDUCTION DES ANIMATIONS
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-photo-slide {
+    transform: none;
+    transition: opacity 0.2s linear;
+  }
+
+  .home-photo-slide.active {
+    transform: none;
+  }
 }
 
 
@@ -1375,5 +1430,99 @@ a {
   .btn,
   .home-links a {
     transition: none;
+  }
+}/* =====================================================
+   CORRECTIONS MOBILE FINALES
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+  /* Bannière : conserver toute l'image et le logo */
+  .logo-image {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    background: #f8edcf;
+  }
+
+  /* Hero accueil */
+  .home-v3-hero {
+    padding: 38px 0 42px;
+  }
+
+  .home-v3-hero-grid {
+    width: 100%;
+    gap: 28px;
+  }
+
+  .home-v3-hero-content {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .home-v3-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 11vw, 2.6rem);
+    line-height: 1.02;
+    overflow-wrap: anywhere;
+  }
+
+  .home-v3-kicker {
+    font-size: 0.72rem;
+    line-height: 1.4;
+  }
+
+  .home-v3-lead {
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .home-v3-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-v3-actions .btn {
+    width: 100%;
+  }
+
+  .home-v3-feature {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .home-v3-feature h2 {
+    font-size: 1.55rem;
+  }
+
+  /* Recherche */
+  .site-search {
+    width: calc(100% - 32px);
+    margin: 12px auto;
+  }
+}@media (max-width: 420px) {
+  .home-v3-hero h1 {
+    font-size: 2.15rem;
+    line-height: 1.02;
+  }
+
+  .home-v3-lead {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .home-v3-meta {
+    display: none;
+  }
+
+  .site-search {
+    width: calc(100% - 24px);
+  }
+
+  .site-search input {
+    padding: 10px 14px;
+    font-size: 0.9rem;
   }
 }

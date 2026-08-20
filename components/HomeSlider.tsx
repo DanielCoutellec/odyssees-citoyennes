@@ -22,17 +22,13 @@ export default function HomeSlider() {
 
   return (
     <div className="home-photo-slider" aria-hidden="true">
-      {slides.map((src, index) => (
-        <div
-          key={src}
-          className={`home-photo-slide ${
-            index === currentSlide ? "active" : ""
-          }`}
-          style={{
-            backgroundImage: `url("${src}")`,
-          }}
-        />
-      ))}
+      <div
+        key={currentSlide}
+        className="home-photo-slide home-photo-slide-current"
+        style={{
+          backgroundImage: `url("${slides[currentSlide]}")`,
+        }}
+      />
 
       <div className="home-photo-overlay" />
     </div>
