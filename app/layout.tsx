@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
 import SiteSearch from "../components/SiteSearch";
+import MobileNav from "../components/MobileNav";
 
 export const metadata: Metadata = {
   title: {
@@ -28,7 +30,7 @@ export default function RootLayout({
         <header className="site-header">
           <div className="header-inner">
 
-            {/* LOGO / BANNIÈRE */}
+            {/* BANNIÈRE / LOGO */}
             <a href="/" className="logo">
               <img
                 src="/logo-odyssees.png"
@@ -38,9 +40,12 @@ export default function RootLayout({
             </a>
 
 
-            {/* NAVIGATION PRINCIPALE */}
+            {/* =================================================
+                NAVIGATION DESKTOP
+                ================================================= */}
+
             <nav
-              className="main-nav"
+              className="main-nav desktop-nav"
               aria-label="Navigation principale"
             >
               <a href="/">
@@ -73,7 +78,17 @@ export default function RootLayout({
             </nav>
 
 
-            {/* MOTEUR DE RECHERCHE */}
+            {/* =================================================
+                NAVIGATION MOBILE
+                ================================================= */}
+
+            <MobileNav />
+
+
+            {/* =================================================
+                MOTEUR DE RECHERCHE
+                ================================================= */}
+
             <SiteSearch />
 
           </div>
@@ -81,7 +96,7 @@ export default function RootLayout({
 
 
         {/* =====================================================
-            CONTENU DES PAGES
+            CONTENU
             ===================================================== */}
 
         {children}
@@ -92,10 +107,10 @@ export default function RootLayout({
             ===================================================== */}
 
         <footer className="site-footer">
-
           <div className="container footer-grid">
 
             {/* COLONNE GAUCHE */}
+
             <div className="footer-info">
 
               <h3>
@@ -125,11 +140,11 @@ export default function RootLayout({
 
 
             {/* COLONNE DROITE */}
+
             <nav
               className="footer-links"
               aria-label="Informations légales"
             >
-
               <a href="/mentions-legales">
                 Mentions légales
               </a>
@@ -145,11 +160,9 @@ export default function RootLayout({
               <a href="/contact">
                 Contact
               </a>
-
             </nav>
 
           </div>
-
         </footer>
 
       </body>

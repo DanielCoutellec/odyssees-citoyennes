@@ -1525,4 +1525,73 @@ a {
     padding: 10px 14px;
     font-size: 0.9rem;
   }
+}/* =====================================================
+   MENU MOBILE COMPACT
+   ===================================================== */
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    width: 100%;
+    background: #fffaf0;
+    border-bottom: 3px solid #f28c18;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    width: 100%;
+
+    padding: 13px 16px;
+
+    border: 0;
+    background: #fffaf0;
+
+    color: #222;
+
+    font: inherit;
+    font-weight: 800;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  .mobile-nav-toggle:hover {
+    background: #f8edcf;
+  }
+
+  .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ead7aa;
+  }
+
+  .mobile-nav-menu a {
+    display: block;
+
+    padding: 11px 15px;
+
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+
+    border-bottom: 1px solid #ead7aa;
+  }
+
+  .mobile-nav-menu a:hover {
+    background: #f8edcf;
+    color: #d94420;
+  }
+
+  .site-search {
+    margin: 10px auto;
+  }
 }
